@@ -1,5 +1,5 @@
 // change theme colors
-
+$primary:#8DBF41;
 
 // import functions and variables
 @import "../node_modules/bootstrap/scss/functions";
@@ -12,6 +12,7 @@ $custom-theme-colors:(
    "icon-color":#2eaadc,
    "footer-color":#004585,
    "service":#F2F2F2,
+   "psColor":#8DBF41,
 );
 
 $theme-colors:map-merge($custom-theme-colors,$theme-colors);
