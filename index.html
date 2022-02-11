@@ -5,15 +5,234 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vance Computers</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="public/css/main.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <style>
+        section {
+            padding: 60px 0;
+        }
+       
+    </style>
 </head>
 
 <body>
-    <div class="container-lg">
-        <h3> Welcome to vance computers</h3>
-        <button class=" btn btn-primary">welcome</button>
-    </div>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img class="img-fluid" src="public/images/logo.jpg" alt="" width="150" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="{{ __('Toggle navigation') }}">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Left Side Of Navbar -->
+                <ul class="navbar-nav me-auto">
+                    <li> <a class="nav-link" href="#intro">Home</a></li>
+                </ul>
+
+                <!-- Right Side Of Navbar -->
+                <ul class="navbar-nav ms-auto">
+                    <li> <a class="nav-link" href="#about-us">About</a></li>
+                    <li> <a class="nav-link" href="#what-we-do">Services</a></li>
+                    <li> <a class="nav-link" href="#products">Products</a></li>
+                    <li> <a class="nav-link" href="#contact-us">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- introduction section  -->
+    <section id="intro">
+        <div class="container-lg">
+            <div class="row justify-content-center align-items-center my-2">
+                <div class="col-md-6 mb-3">
+                    <h1 class="display-3 fw-bold border-bottom-3 border-info fw-bold">Creating software solutions for
+                        all your business needs.</h1>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, quos.
+                    </p>
+                    <a href="#contact-us" class="btn btn-lg btn-action">Contact us now</a>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid" src="public/images/intro.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- who we are section -->
+    <section id="who-we-are">
+        <div class="container-lg">
+            <div class="row justify-content-center ">
+                <div class="col-md-8 text-center">
+                    <h2 class="display-4 fw-bold">Who we are</h2>
+                    <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel repellat nemo
+                        excepturi minus,
+                        deleniti eum. Voluptas fugit suscipit iure nobis possimus soluta fugiat quod iste numquam,
+                        voluptatem cum, ab maiores!</p>
+
+                    <div><a class="btn btn-lg btn-action " href="#about-us">
+                       
+                            Learn More
+                          <span class="ms-3">  <i  class="fa fa-arrow-right"></i></span>
+                        </a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- what we do section -->
+    <section id="what-we-do" class="bg-light">
+        <div class="container-lg">
+            <div class="text-center mb-4">
+                <h3 class="display-4 text-center fw-bold">What we do</h3>
+                <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4 text-center">
+                    <img src="public/images/install.png" alt="">
+                    <h5 class="fw-bold">Point of sale softwares</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, repellat?</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="public/images/website.png" alt="">
+                    <h5 class="fw-bold">Web based applications</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ut!</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="public/images//phone.png" alt="">
+                    <h5 class="fw-bold">Mobile applications</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ut!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="public/images//support.png" alt="">
+                    <h5 class="fw-bold">IT support</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, dolore!</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="public/images/setting.png" alt="">
+                    <h5 class="fw-bold">Computer repair and maintenance</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, dolore!</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="public/images/devices.png" alt="">
+                    <h5 class="fw-bold">Computers and accessories</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, dolore!</p>
+                </div>
+            </div>
+          
+        </div>
+    </section>
+
+    <!-- our works -->
+    <section id="products">
+      <div class="container-lg">
+        <div class="text-center">
+            <h3>Software solutions</h3>
+        <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, ratione!</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-center">Point of sale (pos) Orders</div>
+                <div class="card-body">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                          <h6 class="my-3 ms-3">Main features</h6>
+                          <p>
+                              <i class="bi bi-check me-2 text-success fs-5"></i>
+                          Order capture</p>
+                          <p>
+                              <i class="bi bi-check me-2 text-success fs-5"></i>
+                          Order Verification</p>
+                          <p>
+                              <i class="bi bi-check me-2 text-success fs-5"></i>
+                          Order processing</p>
+                        </div>
+                        <div class="col-md-6">
+                          <h6 class="my-3 ms-4">OtherFeatures</h6>
+                          <p>
+                              <i class="bi bi-check me-2 text-success fs-5"></i>
+                          New quotation</p>
+                          <p>
+                              <i class="bi bi-check me-2 text-success fs-5"></i>
+                          Process quotation</p>
+                          <p>
+                              <i class="bi bi-check me-2 text-success fs-5"></i>
+                          Order processing</p>
+                        </div>
+                    </div>
+                </div>
+                  
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-center">Point of sale (pos) Orders</div>
+                <div class="card-body">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                          <h6 class="my-3 ms-3">Main features</h6>
+                          <p>
+                              <i class="bi bi-check me-2 text-success fs-5"></i>
+                          Order capture</p>
+                          <p>
+                              <i class="bi bi-check me-2 text-success fs-5"></i>
+                          Order Verification</p>
+                          <p>
+                              <i class="bi bi-check me-2 text-success fs-5"></i>
+                          Order processing</p>
+                        </div>
+                        <div class="col-md-6">
+                          <h6 class="my-3 ms-4">OtherFeatures</h6>
+                          <p>
+                              <i class="bi bi-check me-2 text-success fs-5"></i>
+                          New quotation</p>
+                          <p>
+                              <i class="bi bi-check me-2 text-success fs-5"></i>
+                          Process quotation</p>
+                          <p>
+                              <i class="bi bi-check me-2 text-success fs-5"></i>
+                          Order processing</p>
+                        </div>
+                    </div>
+                </div>
+                  
+                </div>
+            </div>
+            
+            
+        </div>
+      </div>
+    </section>
+
+    <!-- reviews section -->
+    <section id="reviews"></section>
+
+    <!-- About us section -->
+    <section id="about-us"></section>
+
+    <!-- contact us section -->
+    <section id="contact-us"></section>
+
+
+    <!-- footer section -->
+
+    <section id="footer"></section>
+
+
+
+
+
     <script src="public/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
