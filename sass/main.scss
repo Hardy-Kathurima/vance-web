@@ -1,0 +1,19 @@
+// change theme colors
+
+
+// import functions and variables
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+// custom theme color
+
+$custom-theme-colors:(
+   
+);
+
+$theme-colors:map-merge($custom-theme-colors,$theme-colors);
+
+
+
+// import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
