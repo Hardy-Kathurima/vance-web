@@ -7,6 +7,7 @@
     <title>Vance Computers</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="public/css/main.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <style>
@@ -17,10 +18,30 @@
         .premise {
             border: 10px double #8DBF41;
         }
+        #footer{
+            background-color: #004585;
+            color:white;
+        }
+        
+        #footer p a{
+            text-decoration: none;
+            color: white;
+        }
+      .navigate {
+            background-color: #ec509c;
+            color:white;
+            display: none;
+            text-align: center;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            position: fixed;
+            
+}
     </style>
 </head>
 
-<body>
+<body id="body">
     <!-- navbar -->
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
         <div class="container">
@@ -55,15 +76,15 @@
     <section id="intro">
         <div class="container-lg">
             <div class="row justify-content-center align-items-center my-2">
-                <div class="col-md-6 mb-3">
+                <div class="col-md-6 mb-3" data-aos="fade-in">
                     <h1 class="display-3 fw-bold border-bottom-3 border-info fw-bold">Creating software solutions for
                         all your business needs.</h1>
                     <p class="lead">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, quos.
+                        We are in the business of enhancing your business.
                     </p>
                     <a href="#contact-us" class="btn btn-lg btn-action">Contact us now</a>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-up">
                     <img class="img-fluid" src="public/images/intro.png" alt="">
                 </div>
             </div>
@@ -71,11 +92,11 @@
     </section>
 
     <!-- who we are section -->
-    <section id="who-we-are">
+    <section id="who-we-are"data-aos="fade-up">
         <div class="container-lg">
             <div class="row justify-content-center ">
                 <div class="col-md-8 text-center">
-                    <h2 class="display-4 fw-bold">Who we are</h2>
+                    <h2 class="display-4 fw-bold" >Who we are</h2>
                     <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel repellat nemo
                         excepturi minus,
                         deleniti eum. Voluptas fugit suscipit iure nobis possimus soluta fugiat quod iste numquam,
@@ -92,7 +113,7 @@
     </section>
 
     <!-- what we do section -->
-    <section id="what-we-do" class="bg-light">
+    <section id="what-we-do" class="bg-light" data-aos="fade-up">
         <div class="container-lg">
             <div class="text-center mb-4">
                 <h3 class="display-4 text-center fw-bold">What we do</h3>
@@ -137,7 +158,7 @@
     </section>
 
     <!-- our works -->
-    <section id="products">
+    <section id="products" data-aos="fade-in">
         <div class="container-lg">
             <div class="text-center">
                 <h3 class="display-4">Software solutions</h3>
@@ -216,72 +237,117 @@
 
 
             </div>
+            <div class="text-center my-3"><a href="https://detail.en.china.cn/provide/p105384289.html" target="_blank"
+                    class=" btn btn-action" data-aos="fade-up">Checkout our
+                    products
+                    <span class="ms-3"> <i class="fa fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- previous works -->
+    <section id="previous-works" class="bg-light">
+        <div class="container-lg">
+            <div class="text-center">
+                <h3 class="display-4">Recent works</h3>
+                <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
+                    quibusdam.
+                </p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8 mb2" data-aos="fade-in">
+                    <figure class="figure">
+                        <img src="public/images/hoak.png" class="figure-img img-fluid rounded" alt="">
+                        <figcaption class="figure-caption text-center fs-3"><a
+                                href="https://loving-babbage-f9ee54.netlify.app/" target="_blank">View Live Demo</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-2" data-aos="fade-up">
+                    <img src="public/images/luxury.png" class="figure-img img-fluid rounded" alt="">
+                    <figcaption class="figure-caption text-center fs-3"><a
+                            href="https://hardy-kathurima.github.io/materialize-ui/" target="_blank">View Live Demo</a>
+                    </figcaption>
+                </div>
+                <div class="col-md-6 mb-2" data-aos="fade-up">
+                    <img src="public/images/html.png" class="figure-img img-fluid rounded" alt="">
+                    <figcaption class="figure-caption text-center fs-3"><a
+                            href="https://elegant-stonebraker-1b6453.netlify.app/" target="_blank">View Live Demo</a>
+                    </figcaption>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- clients section -->
-    <section id="clients">
+    <section id="clients" data-aos="fade-up">
         <div class="container-lg">
             <div class="text-center">
                 <h3 class="display-5">Current/ongoing web solution clients</h3>
                 <p class="lead text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, quis.</p>
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <table class="table caption-bottom table table-bordered table-responsive">
-                        <caption>List of clients</caption>
-                        <thead>
-                            <tr>
+                <div class="col-lg-12 text-center">
+                    <div class="table-responsive">
+                        <table class="table caption-bottom table table-bordered">
+                            <caption>List of clients</caption>
+                            <thead>
+                                <tr>
 
-                                <th scope="col">Client Name</th>
-                                <th scope="col">Type of business</th>
-                                <th scope="col">Location</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
+                                    <th scope="col">Client Name</th>
+                                    <th scope="col">Type of business</th>
+                                    <th scope="col">Location</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
 
-                                <td>Moveon distributors</td>
-                                <td>Distributors/wholesalers</td>
-                                <td>Meru/Mwingi</td>
-                            </tr>
-                            <tr>
+                                    <td>Moveon distributors</td>
+                                    <td>Distributors/wholesalers</td>
+                                    <td>Meru/Mwingi</td>
+                                </tr>
+                                <tr>
 
-                                <td>Ahtram</td>
-                                <td>Retail</td>
-                                <td>Nairobi</td>
-                            </tr>
-                            <tr>
+                                    <td>Ahtram</td>
+                                    <td>Retail</td>
+                                    <td>Nairobi</td>
+                                </tr>
+                                <tr>
 
-                                <td>Bantu Resort and SPA</td>
-                                <td>Hotel/bar</td>
-                                <td>Nyeri</td>
-                            </tr>
-                            <tr>
+                                    <td>Bantu Resort and SPA</td>
+                                    <td>Hotel/bar</td>
+                                    <td>Nyeri</td>
+                                </tr>
+                                <tr>
 
-                                <td>Kinyozi Parlour</td>
-                                <td>Retail</td>
-                                <td>Nairobi</td>
-                            </tr>
-                            <tr>
+                                    <td>Kinyozi Parlour</td>
+                                    <td>Retail</td>
+                                    <td>Nairobi</td>
+                                </tr>
+                                <tr>
 
-                                <td>Maggies Tavern</td>
-                                <td>Hotel</td>
-                                <td>Nairobi</td>
-                            </tr>
-                            <tr>
+                                    <td>Maggies Tavern</td>
+                                    <td>Hotel</td>
+                                    <td>Nairobi</td>
+                                </tr>
+                                <tr>
 
-                                <td>Bradegate Millers</td>
-                                <td>Manufacturing ERP</td>
-                                <td>Nyeri</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                    <td>Bradegate Millers</td>
+                                    <td>Manufacturing ERP</td>
+                                    <td>Nyeri</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
 
             </div>
             <div class="text-center"><a href="https://detail.en.china.cn/provide/p105384289.html" target="_blank"
-                    class=" btn btn-action">Checkout our
+                    class=" btn btn-action" data-aos="fade-in">Checkout our
                     products
                     <span class="ms-3"> <i class="fa fa-arrow-right"></i></span>
                 </a></div>
@@ -289,7 +355,7 @@
     </section>
 
     <!-- reviews section -->
-    <section id="reviews">
+    <section id="reviews" data-aos="fade-up">
         <div class="container-lg">
             <div class="text-center mb-2">
                 <h3 class="display-4">What people say about us</h3>
@@ -385,7 +451,7 @@
     </section>
 
     <!-- About us section -->
-    <section id="about-us">
+    <section id="about-us" data-aos="fade-in">
         <div class="container-lg">
             <div class="text-center">
                 <h3 class="display-4">About us</h3>
@@ -404,7 +470,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, et ut illo qui repellat iusto
                         repellendus, ducimus ex, magni quia quod eius sed excepturi nostrum.</p>
 
-                    <a href="#" class="btn btn-psColor my-2 text-white">Talk to us</a>
+                    <a href="#contact-us" class="btn btn-psColor my-2 text-white">Talk to us</a>
 
                 </div>
                 <div class="col-md-6 text-center">
@@ -416,14 +482,79 @@
     </section>
 
     <!-- contact us section -->
-    <section id="contact-us"></section>
+    <section id="contact-us" data-aos="fade-in">
+      <div class="container-lg">
+        <div class="text-center">
+            <h3 class="dispaly-4">Contact us</h3>
+            <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, voluptate.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6 contact-section">
+                <div class="text-center">
+                    <img class="img-fluid" src="public/images/vance.jpg" alt="">
+                </div>
+              </div>
+            <div class="col-md-6 mb-2 contact-section">
+                <h4 class="mb-4">GET IN TOUCH</h4>
+                <h2 class="display-4 mb-3">STAYING IN TOUCH IS ALWAYS IN GOOD TASTE</h2>
+                <p>
+                    <span class="ms-3"> <i class="fa fa-mobile"></i></span>
+                    0786 900 116</p>
+                <p>
+                    <span class="ms-3"> <i class="fa fa-envelope"></i></span>
+                    vancecomputers@gmail.com</p>
+                  
+                    <p>
+                        <span class="ms-3"> <i class="fa fa-map-marker"></i></span>
+                        Kensia House Murang'a Road opposite K.I.E
+                        2nd Floor Suite 22A</p>
+            </div>
+           
+        </div>
+      </div>
+    </section>
 
 
     <!-- footer section -->
 
-    <section id="footer"></section>
+    <section id="footer" class="bg-action">
+        <div class="container-lg">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <h6 class="fw-bold">Important links</h6>
+                  <p><a href="https://detail.en.china.cn/provide/p105384289.html" target="_blank">Vance Products</a></p>
+                  <p><a href="https://web.facebook.com/people/Vance-Point-of-Sale-Centre/100057448659518/" target="_blank">Vance point of sale</a></p>
 
+                </div>
+                <div class="col-md-4">
+                    <h6 class="fw-bold">Quick links</h6>
+                  <p><a href="#about-us">About us</a></p>
+                  <p><a href="#contact-us">Contact us</a></p>
+                  <p><a href="#previous-works">Recent works</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="fw-bold">Services</h6>
+                  <p><a href="#products">Software Development</a></p>
+                  <p><a href="#previous-works">Website Development</a></p>
+                  <p><a href="https://detail.en.china.cn/provide/p105384289.html" target="_blank">Computers and accessories</a></p>
+                  
+                </div>
+            </div>
+                
+          <div class="row-justify-content-center mt-4">
+          <div class="text-center"> &copy;  All rights reserved - Vance computers
+           <script>document.write(new Date().getFullYear())</script>
+            </div>
+          </div>
 
+        </div>
+    </section>
+
+<div class="container">
+    <div class="navigate d-flex justify-content-center align-items-center p-3">
+        <span class=""> <i class="fa fa-arrow-up"></i></span>
+      </div>
+</div>
 
 
 
@@ -431,6 +562,38 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+              AOS.init({
+            duration: 1000,
+            once: false,
+            delay: 50,
+        });
+
+        // go up button start
+let btn = document.querySelector(".navigate");
+let body = document.querySelector("#body");
+btn.addEventListener('click', scrollUp);
+
+function scrollUp() {
+  document.documentElement.scrollTop = 0;
+
+
+
+}
+window.onscroll = function () {
+  scrollFunction()
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+}
+
+        </script>
 </body>
 
 </html>
